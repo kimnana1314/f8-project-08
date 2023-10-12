@@ -1387,6 +1387,7 @@ html.dark {
 }
 
 .dropdown {
+  display: none;
   position: absolute;
   left: 0;
   width: min(1240px, 100%);
@@ -1410,12 +1411,14 @@ html.dark {
 }
 
 .top-menu {
+  --top-menu-width: 292px;
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 .top-menu__main {
-  width: 292px;
-  max-height: calc(min(582px, 100vh - 158px) - 2 * var(--inner-padding));
+  width: var(--top-menu-width);
+  max-height: calc(min(582px, 100vh - 135px) - 2 * var(--inner-padding));
   overflow-y: auto;
 }
 .top-menu__main:first-child {
@@ -1433,13 +1436,18 @@ html.dark {
   width: 36px;
   height: 36px;
 }
+@media (max-width: 1199.98px) {
+  .menu-column--icon {
+    display: none;
+  }
+}
 .menu-column--content {
   flex: 1;
 }
 .menu-column__icon-1 {
   width: 30px;
   height: 30px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .menu-column__icon-2 {
   position: absolute;
@@ -1468,6 +1476,31 @@ html.dark {
 .menu-column__link:hover {
   color: #0071dc;
   font-weight: 500;
+}
+.menu-column__item--active > .menu-column__link, .menu-column__item:hover > .menu-column__link {
+  color: #0071dc;
+  font-weight: 500;
+}
+.menu-column__item--active .sub-menu {
+  display: flex;
+}
+.menu-column__item:hover .sub-menu {
+  display: flex;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  justify-content: space-between;
+  inset: 0 0 0 var(--top-menu-width);
+  overflow-y: auto;
+}
+.sub-menu--not-main {
+  position: initial;
+  inset: initial;
+  display: flex;
+  flex: 1;
+  max-height: calc(min(582px, 100vh - 135px) - 2 * var(--inner-padding));
 }
 
 /*# sourceMappingURL=main.css.map */

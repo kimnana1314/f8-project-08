@@ -1,5 +1,6 @@
+@use "../abstracts";
 .dropdown {
-    // display: none;
+    display: none;
     position: absolute;
     left: 0;
     width: min(1240px, 100%);
@@ -23,12 +24,14 @@
 }
 
 .top-menu {
+    --top-menu-width: 292px;
+    position: relative;
     display: flex;
     justify-content: space-between;
 
     &__main {
-        width: 292px;
-        max-height: calc(min(582px, 100vh - 158px) - 2 * var(--inner-padding));
+        width: var(--top-menu-width);
+        max-height: calc(min(582px, 100vh - 135px) - 2 * var(--inner-padding));
         overflow-y: auto;
         &:first-child {
             border-right: 1px solid var(--top-menu-border-color);
@@ -41,6 +44,10 @@
     display: flex;
     gap: 14px;
     &--icon {
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+
         position: relative;
         flex-shrink: 0;
         width: 36px;
@@ -52,7 +59,7 @@
     &__icon-1 {
         width: 30px;
         height: 30px;
-        object-fit: cover;
+        object-fit: contain;
     }
     &__icon-2 {
         position: absolute;
@@ -82,5 +89,35 @@
             color: #0071dc;
             font-weight: 500;
         }
+    }
+
+    &__item--active > &__link,
+    &__item:hover > &__link {
+        color: #0071dc;
+        font-weight: 500;
+    }
+
+    &__item {
+        &--active .sub-menu {
+            display: flex;
+        }
+    }
+    &__item:hover .sub-menu {
+        display: flex;
+    }
+}
+.sub-menu {
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    inset: 0 0 0 var(--top-menu-width);
+    overflow-y: auto;
+
+    &--not-main {
+        position: initial;
+        inset: initial;
+        display: flex;
+        flex: 1;
+        max-height: calc(min(582px, 100vh - 135px) - 2 * var(--inner-padding));
     }
 }
