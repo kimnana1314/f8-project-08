@@ -1,9 +1,22 @@
+@use "../abstracts";
 html.dark {
     --text-color: #fff;
     --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
         saturate(0%) hue-rotate(235deg) brightness(108%) contrast(101%);
+    --body-bg: #292e39;
     --header-bg-color: #171c28;
     --top-act-group-bg-color: #292e39;
     --top-act-group-shadow: rgba(0, 0, 0, 0.2);
     --top-act_group-separate: #ededf6;
+    //dropdown
+    --dropdown-bg-color: #171c28;
+    --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
+    --dropdown-bg-before-color: brightness(0) saturate(100%) invert(7%)
+        sepia(22%) saturate(1230%) hue-rotate(184deg) brightness(95%)
+        contrast(91%);
+    @include abstracts.breakpoint(lg) {
+        --header-shadow-color: rgba(0, 0, 0, 0.2);
+    }
+
+    --top-menu-border-color: #171c28;
 }
