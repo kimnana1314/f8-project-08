@@ -4,16 +4,27 @@
         <button class="top-bar__more d-none d-lg-block js-toggle" toggle-target="#navbar">
             <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
         </button>
+
         <!-- logi -->
         <a href="/" class="logo">
             <img src="./assets/icons/logo.svg" alt="grocerymark" class="logo__img" />
             <h1 class="logo__title">grocerymark</h1>
         </a>
         <!-- nabar -->
-        <nav id="navbar" class="navbar hide">
+        <nav id="navbar" class="navbar show">
             <button class="navbar__close-btn d-none d-lg-block js-toggle" toggle-target="#navbar">
-                <img src="./assets/icons/arrow-left.svg" alt="" />
+                <img src="./assets/icons/arrow-left.svg" alt="" class="icon" />
             </button>
+            <a href="#!" class="nav-btn d-none d-md-flex">
+                <img src="./assets/icons/buy.svg" alt="" class="icon nav-btn__icon" />
+                <span class="nav-btn__title">Card</span>
+                <span class="nav-btn__qty">3</span>
+            </a>
+            <a href="#!" class="nav-btn d-none d-md-flex">
+                <img src="./assets/icons/heart.svg" alt="" class="icon nav-btn__icon" />
+                <span class="nav-btn__title">Favorite</span>
+                <span class="nav-btn__qty">3</span>
+            </a>
             <ul class="navbar__list js-dropdown-list">
                 <li class="navbar__item">
                     <a href="#!" class="navbar__link">
@@ -26,7 +37,7 @@
                                 <div class="top-menu__main">
                                     <!-- Menu column -->
                                     <div class="menu-column">
-                                        <div class="menu-column--icon">
+                                        <div class="menu-column--icon d-lg-none">
                                             <img
                                                 src="./assets/img/category/category.1.1.svg"
                                                 alt=""
@@ -39,7 +50,7 @@
                                             />
                                         </div>
                                         <div class="menu-column--content">
-                                            <h2 class="menu-column__heading">All Departments</h2>
+                                            <h2 class="menu-column__heading d-lg-none">All Departments</h2>
                                             <ul class="menu-column__list js-menu-list">
                                                 <li class="menu-column__item">
                                                     <a href="#!" class="menu-column__link">
@@ -63,7 +74,7 @@
                                                                 </div>
                                                                 <div class="menu-column--content">
                                                                     <h2 class="menu-column__heading">TV & Video</h2>
-                                                                    <ul class="menu-column__list">
+                                                                    <ul class="menu-column__list js-menu-list">
                                                                         <li>
                                                                             <a href="#!" class="menu-column__link">
                                                                                 Shop all TVs
@@ -119,7 +130,7 @@
                                                                     <h2 class="menu-column__heading">
                                                                         Wearable Technology
                                                                     </h2>
-                                                                    <ul class="menu-column__list">
+                                                                    <ul class="menu-column__list js-menu-list">
                                                                         <li>
                                                                             <a href="#!" class="menu-column__link">
                                                                                 Galaxy Watch
@@ -166,7 +177,7 @@
                                                                 </div>
                                                                 <div class="menu-column--content">
                                                                     <h2 class="menu-column__heading">Computers</h2>
-                                                                    <ul class="menu-column__list">
+                                                                    <ul class="menu-column__list js-menu-list">
                                                                         <li>
                                                                             <a href="#!" class="menu-column__link">
                                                                                 Shop All Computers
@@ -248,7 +259,7 @@
                                                                 </div>
                                                                 <div class="menu-column--content">
                                                                     <h2 class="menu-column__heading">Savings</h2>
-                                                                    <ul class="menu-column__list">
+                                                                    <ul class="menu-column__list js-menu-list">
                                                                         <li>
                                                                             <a href="#!" class="menu-column__link">
                                                                                 Tech Savings
@@ -282,7 +293,7 @@
                                                                 </div>
                                                                 <div class="menu-column--content">
                                                                     <h2 class="menu-column__heading">Cell Phones</h2>
-                                                                    <ul class="menu-column__list">
+                                                                    <ul class="menu-column__list js-menu-list">
                                                                         <li>
                                                                             <a href="#!" class="menu-column__link">
                                                                                 Wireless Deals
@@ -408,7 +419,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Grocery</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Shop All </a>
                                                     </li>
@@ -436,7 +447,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Fresh Produce</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Shop All </a>
                                                     </li>
@@ -487,7 +498,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Savings</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Tech Savings </a>
                                                     </li>
@@ -515,7 +526,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Cell Phones</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Wireless Deals </a>
                                                     </li>
@@ -567,7 +578,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">TV & Video</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Shop all TVs </a>
                                                     </li>
@@ -611,7 +622,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Wearable Technology</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Galaxy Watch </a>
                                                     </li>
@@ -648,7 +659,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Savings</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Tech Savings </a>
                                                     </li>
@@ -676,7 +687,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Cell Phones</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Wireless Deals </a>
                                                     </li>
@@ -742,7 +753,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">TV & Video</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Shop all TVs </a>
                                                     </li>
@@ -786,7 +797,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Wearable Technology</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Galaxy Watch </a>
                                                     </li>
@@ -823,7 +834,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Savings</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Tech Savings </a>
                                                     </li>
@@ -851,7 +862,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Cell Phones</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Wireless Deals </a>
                                                     </li>
@@ -903,7 +914,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Computers</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Shop All Computers </a>
                                                     </li>
@@ -963,7 +974,7 @@
                                             </div>
                                             <div class="menu-column--content">
                                                 <h2 class="menu-column__heading">Computers</h2>
-                                                <ul class="menu-column__list">
+                                                <ul class="menu-column__list js-menu-list">
                                                     <li>
                                                         <a href="#!" class="menu-column__link"> Shop All Computers </a>
                                                     </li>

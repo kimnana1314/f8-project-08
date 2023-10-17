@@ -1,8 +1,8 @@
 @use "../abstracts";
 html {
     --text-color: #1a162e;
-    --icon-color: brightness(0) saturate(100%) invert(7%) sepia(19%)
-        saturate(2422%) hue-rotate(214deg) brightness(98%) contrast(95%);
+    --icon-color: brightness(0) saturate(100%) invert(7%) sepia(19%) saturate(2422%) hue-rotate(214deg) brightness(98%)
+        contrast(95%);
     --body-bg: #f6f6f6;
     --header-bg-color: #eee;
     --top-act-group-bg-color: #fff;
@@ -17,8 +17,10 @@ html {
     --dropdown-bg-color: #fff;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
 
-    --dropdown-bg-before-color: brightness(0) saturate(100%) invert(100%)
-        sepia(100%) saturate(0%) hue-rotate(88deg) brightness(104%)
-        contrast(102%);
+    --dropdown-bg-before-color: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(88deg)
+        brightness(104%) contrast(102%);
     --top-menu-border-color: #d2d1d6;
+    // Sidebar
+    --sidebar-bg: #fff;
+    --sidebar--shadowcolor: rgba(200, 200, 200, 0.4);
 }

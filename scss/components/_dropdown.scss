@@ -5,6 +5,10 @@
     left: 0;
     width: min(1240px, 100%);
     padding-top: 54px;
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        padding-top: 0;
+    }
     &__inner {
         --inner-padding: 30px;
         position: relative;
@@ -12,14 +16,24 @@
         border-radius: 20px;
         background: var(--dropdown-bg-color);
         box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
-    }
-    &::before {
-        content: url("../icons/dropdown-arrow.svg");
-        position: absolute;
-        top: 40px;
-        left: var(--arrow-left-pos);
-        translate: -50%;
-        filter: var(--dropdown-bg-before-color);
+
+        &::before {
+            content: url("../icons/dropdown-arrow.svg");
+            position: absolute;
+            top: -13px;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+            filter: var(--dropdown-bg-before-color);
+        }
+        @include abstracts.breakpoint(lg) {
+            padding: 0 40px;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            &::before {
+                content: none;
+            }
+        }
     }
 }
 
@@ -36,6 +50,14 @@
         &:first-child {
             border-right: 1px solid var(--top-menu-border-color);
         }
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+            max-height: initial;
+            height: auto;
+            &:first-child {
+                border-right: none;
+            }
+        }
     }
 }
 
@@ -47,7 +69,9 @@
         @include abstracts.breakpoint(xl) {
             display: none;
         }
-
+        @include abstracts.breakpoint(lg) {
+            display: block;
+        }
         position: relative;
         flex-shrink: 0;
         width: 36px;
@@ -77,6 +101,9 @@
     }
     &__list {
         margin-top: 19px;
+        @include abstracts.breakpoint(lg) {
+            margin-top: 0;
+        }
     }
 
     &__link {
@@ -112,12 +139,19 @@
     justify-content: space-between;
     inset: 0 0 0 var(--top-menu-width);
     overflow-y: auto;
-
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        flex-direction: column;
+    }
     &--not-main {
         position: initial;
         inset: initial;
         display: flex;
         flex: 1;
         max-height: calc(min(582px, 100vh - 135px) - 2 * var(--inner-padding));
+        @include abstracts.breakpoint(lg) {
+            max-height: initial;
+            height: auto;
+        }
     }
 }
