@@ -5,7 +5,7 @@
     left: 0;
     width: min(1240px, 100%);
     padding-top: 54px;
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         padding-top: 0;
     }
@@ -25,7 +25,7 @@
             translate: -50%;
             filter: var(--dropdown-bg-before-color);
         }
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             padding: 0 40px;
             border-radius: 0;
             background: transparent;
@@ -50,7 +50,7 @@
         &:first-child {
             border-right: 1px solid var(--top-menu-border-color);
         }
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             width: 100%;
             max-height: initial;
             height: auto;
@@ -66,10 +66,10 @@
     display: flex;
     gap: 14px;
     &--icon {
-        @include abstracts.breakpoint(xl) {
+        @include abstracts.screen(xl) {
             display: none;
         }
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             display: block;
         }
         position: relative;
@@ -101,7 +101,7 @@
     }
     &__list {
         margin-top: 19px;
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             margin-top: 0;
         }
     }
@@ -139,7 +139,7 @@
     justify-content: space-between;
     inset: 0 0 0 var(--top-menu-width);
     overflow-y: auto;
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         flex-direction: column;
     }
@@ -149,7 +149,7 @@
         display: flex;
         flex: 1;
         max-height: calc(min(582px, 100vh - 135px) - 2 * var(--inner-padding));
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             max-height: initial;
             height: auto;
         }

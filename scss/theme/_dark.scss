@@ -13,7 +13,7 @@ html.dark {
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
     --dropdown-bg-before-color: brightness(0) saturate(100%) invert(7%) sepia(22%) saturate(1230%) hue-rotate(184deg)
         brightness(95%) contrast(91%);
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
 
@@ -21,5 +21,11 @@ html.dark {
 
     // Sidebar
     --sidebar-bg: #292e39;
-    --sidebar--shadowcolor: rgba(23, 28, 40, 0.4);
+    --sidebar--shadow-color: rgba(23, 28, 40, 0.4);
+
+    --categories-heading-color: #fff;
+    --categories-bg-color: #171c28;
+    --categories-bg-thumb-color: #171c28;
+    --categories-title-color: #fff;
+    --categories-desc-color: #fff;
 }
