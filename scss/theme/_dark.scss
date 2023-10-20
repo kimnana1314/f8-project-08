@@ -19,13 +19,25 @@ html.dark {
 
     --top-menu-border-color: #171c28;
 
-    // Sidebar
+    // Sidebar #171C28
     --sidebar-bg: #292e39;
     --sidebar--shadow-color: rgba(23, 28, 40, 0.4);
 
     --categories-heading-color: #fff;
     --categories-bg-color: #171c28;
-    --categories-bg-thumb-color: #171c28;
+    --categories-bg-md-color: #171c28;
+    --categories-bg-thumb-color: #292e39;
     --categories-title-color: #fff;
     --categories-desc-color: #fff;
+    // buttons
+    --filter-btn-color: #fff;
+    --filter-btn-bg-color: #171c28;
+    // Product
+    --product-bg-color: #171c28;
+    --product-shadow-color: rgba(0, 0, 0, 0.2);
+    --product-title-color: #fff;
+
+    // Filter form
+    --filter-form-bg: #292e39;
+    --filter-form-shadow: rgba(0, 0, 0, 0.4);
 }

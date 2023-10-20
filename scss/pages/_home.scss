@@ -7,7 +7,6 @@
         }
     }
     &__heading {
-        margin-bottom: 20px;
         color: var(-categories-heading-color);
         font-size: 2.4rem;
         font-weight: 700;
@@ -18,5 +17,11 @@
         @include abstracts.screen(md) {
             --grid-gutter-y: 20px;
         }
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
     }
 }
