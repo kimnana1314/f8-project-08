@@ -40,4 +40,8 @@ html.dark {
     // Filter form
     --filter-form-bg: #292e39;
     --filter-form-shadow: rgba(0, 0, 0, 0.4);
+    --filter-heading: #fff;
+    --filter-tag-bg: #171c28;
+    --filter-arrow-bg: brightness(0) saturate(100%) invert(16%) sepia(20%) saturate(561%) hue-rotate(183deg)
+        brightness(92%) contrast(92%);
 }

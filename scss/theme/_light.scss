@@ -42,4 +42,6 @@ html {
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-heading: #1a162e;
+    --filter-arrow-bg: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(88deg)
+        brightness(104%) contrast(102%);
 }

@@ -28,3 +28,40 @@
         display: none;
     }
 }
+
+.btn {
+    padding: 9px 20px;
+    height: 46px;
+    border-radius: 6px;
+    background: #f8f8fb;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: opacity ease 0.2s;
+    + .btn {
+        margin-left: 20px;
+    }
+    &--text {
+        color: #9e9da8;
+        background: transparent;
+        font-weight: 400;
+    }
+    &--primary {
+        color: #171c28;
+        background: #ffb700;
+    }
+    &--outline {
+        background: transparent;
+        border: 1px solid #d2d1d6;
+    }
+    &--rounded {
+        border-radius: 99px;
+    }
+    &[disabled],
+    &--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
