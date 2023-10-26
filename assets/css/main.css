@@ -166,6 +166,7 @@ button {
 a,
 img,
 button,
+label,
 input,
 textarea,
 section {
@@ -2457,6 +2458,11 @@ footer {
   display: flex;
   align-items: center;
   background: var(--sign-up-intro-bg);
+}
+@supports (-webkit-touch-callout: none) {
+  .auth {
+    min-height: -webkit-fill-available;
+  }
 }
 .auth__intro, .auth__content {
   padding: 0 20px;
